@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Properties</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+<!--
+Tooplate 2118 Chilling Cafe
+https://www.tooplate.com/view/2118-chilling-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        
+        <h1 class="tm-page-header"><strong>Properties</strong> </h1>
+      </div>
+      <div class="tm-main-content">
+<!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header"> <br> Description </h2>
+	  <p>
+	  The quality of wines have been given a ranking between 0-10 with 0 being the lowest and 10 being the highest ranking. The following barchart shows the number of wines under each category of ranking.
+	  </p>
+          <p>
+	  Fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates and alcohol are all properties that influence the quality of wines. The effect of each of these properties on the overall quality is displayed in the boxplots below. 
+	  </p>
+        </section>
+
+	
+        <hr />
+	<section class="tm-section tm-section-small">
+        <div id="tm-intro-count"></div>
+	<div id="tm-intro-fa"></div>
+	<div id="tm-intro-va"></div>
+	<div id="tm-intro-ca"></div>
+	<div id="tm-intro-rsugar"></div>
+	<div id="tm-intro-chlorides"></div>
+	<div id="tm-intro-fsd"></div>
+	<div id="tm-intro-tsd"></div>
+	<div id="tm-intro-density"></div>
+	<div id="tm-intro-ph"></div>
+	<div id="tm-intro-sulphates"></div>
+	<div id="tm-intro-alcohol"></div>
+	
+	<hr />
+
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header"> Conclusion </h2>
+          <p style="text-align:justify;">
+	  🍷 Quality of the white wines is normally distributed. Most of the wines are rated 5-7. Wines having a rating greater than or equal to 6 are considered good and wines having a rating lesser than 6 are considered bad. There is a total of 3258 good wines and 1640 bad wines. <br>
+    🍷 Wines having a rating greater than 7 are considered to be "Very Good" and there is a total of 1060 Very Good wines. Wines having a rating lesser than 4 are considered to be "Very Poor" and there is a total of 20 Very Poor wines. <br>
+    🍷 Although it is difficult to find a certain pattern, it is seen that usually better quality wines have lower volatile acidity.<br>
+    🍷 Fixed acidity quantity roughly follow the same pattern except the wines rated 9. <br>
+    🍷 Although establishing a pattern is difficult, it is seen that citric acid is on the lower side. <br>
+    🍷 Chlorides are clearly lower for highly rated wines. <br>
+    🍷 Residual sugar is mostly on the lower side for better wines. <br>
+    🍷 Free sulfur dioxide and total sulfur dioxide are moderately correlated and their distribution agianst the quality of the wines are similar. Except the wines rated 4, usually the better wines have low sulfur dioxide.<br>
+    🍷 Better wines on an average have lower density.<br>
+    🍷 Higher pH is evident in wines having high quality.<br>
+    🍷 Sulphates don't have clear differentiating pattern. <br>
+    🍷 Better wines have on an average higher alcohol content.<br>
+
+ 
+	  </p>
+	 </section>
+        
+
+      
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVM</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+<!--
+Tooplate 2118 Chilling Cafe
+https://www.tooplate.com/view/2118-chilling-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        
+        <h1 class="tm-page-header"><strong>SVM</strong> </h1>
+      </div>
+      <div class="tm-main-content">
+<!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header"> <br>  Description </h2>
+          <p>
+In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data used 
+for classification and regression analysis. 
+	  </p><p>
+Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier
+        </p>
+	</section>
+
+        <hr />
+        <div id="tm-intro-svm1"></div>
+	<div id="tm-intro-svm2"></div>
+	
+	<hr />
+
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header"> Conclusion </h2>
+          <p style="text-align:center;">
+	  The accuracy of SVM = 77.64%
+	  </p>
+	 </section>
+        
+
+      
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
